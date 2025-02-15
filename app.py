@@ -1,7 +1,7 @@
 import streamlit as st
 import pickle 
 
-with open('C:\\Users\\deeshika & Sherya\\OneDrive\\Desktop\\New folder (2)\\trained_model.sav', 'rb') as file:
+with open('trained_model.sav', 'rb') as file:
     model = pickle.load(file)
 st.title("Welcome to thyroid cancer prediction")
 age=int(st.number_input("Enter age",step=1))
